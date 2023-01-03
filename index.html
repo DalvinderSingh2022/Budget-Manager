@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/controller.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Manager</title>
+</head>
+
+<body class="flex">
+    <div class="main flex overflow">
+        <div class="container flex column start">
+            <div class="sort flex between">
+                <label for="expense-sort">Expense</label>
+                <select name="expense-sort" id="expense-sort">
+                    <option value="date">Date</option>
+                    <option value="increase">Increasing</option>
+                    <option value="decrease">Decreasing</option>
+                </select>
+            </div>
+            <div class="expense flex column start sub-con overflow"></div>
+        </div>
+
+        <div class="container flex column start">
+            <div class="sort flex between">
+                <label for="income-sort">Income</label>
+                <select name="income-sort" id="income-sort">
+                    <option value="date">Date</option>
+                    <option value="increase">Increasing</option>
+                    <option value="decrease">Decreasing</option>
+                </select>
+            </div>
+            <div class="income flex column start sub-con overflow"></div>
+        </div>
+
+        <div class="container flex column start">
+
+            <div class="balance-area sub-con flex column">
+                <span>Your Balance</span>
+                <span class="balance"></span>
+            </div>
+
+            <form class="transaction-form flex column  sub-con">
+                <div class="flex around sub-con">
+                    <label for="transaction-type">Type</label>
+                    <select class="transaction-type" id="transaction-type" name="transaction-type">
+                        <option value="INCOME">Income</option>
+                        <option value="EXPENSE">Expense</option>
+                    </select>
+                </div>
+
+                <div class="flex around sub-con">
+                    <label for="value-field">Value</label>
+                    <input type="number" id="value-field" name="value-field" class="value-field" placeholder="Rs. 00"
+                        min="0">
+                </div>
+
+                <button type="submit">submit</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

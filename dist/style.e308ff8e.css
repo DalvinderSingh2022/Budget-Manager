@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #85ffbebb;
+    border-radius: 5px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+.main {
+    height: calc(100% - 12em);
+    width: calc(100% - 14em);
+    padding: 2em;
+    gap: 1em;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.3);
+    background: rgba(277, 277, 277, 0.3);
+}
+
+.container {
+    height: calc(100% - 3em);
+    flex: 1;
+    padding: 1.5em;
+    background: rgba(277, 277, 277, 0.5);
+    overflow: hidden;
+    border-radius: 8px;
+    min-width: 285px;
+}
+
+.sort {
+    padding: 0 1em 1em;
+    width: calc(100% - 2em);
+    font-size: 26px;
+}
+
+.list-item {
+    width: calc(100% - 1em);
+    padding: 1em;
+    border-bottom: 1px solid;
+}
+
+.list-item:last-child{
+    border: none;
+}
+
+.list-item span {
+    font-size: 22px;
+}
+
+.balance-area {
+    font-size: 34px;
+    padding: .5em;
+    margin: .5em 0;
+    gap: 12px;
+}
+
+.balance-area .balance {
+    font-size: 38px;
+}
+
+.transaction-form {
+    font-size: 22px;
+    gap: 8px;
+}
+
+.container select,
+.container input,
+.container button {
+    appearance: none;
+    width: 120px;
+    font-size: 18px;
+    outline: none;
+    padding: 8px 0;
+    border: none;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.container button {
+    font-size: 20px;
+    margin: 1em 0;
+    background: inherit;
+    border: 1px solid rgb(50, 50, 50);
+}
+
+.container input:hover,
+.container select:hover,
+.container button:hover {
+    box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 30%);
+}
+
+.sub-con {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.between {
+    justify-content: space-between;
+}
+
+.flex.around {
+    justify-content: space-around;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.start {
+    justify-content: flex-start;
+}
+
+.green {
+    color: rgb(58, 184, 58);
+}
+
+.red {
+    color: rgb(245, 55, 55);
+}
+
+.overflow{
+    overflow: hidden auto;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
